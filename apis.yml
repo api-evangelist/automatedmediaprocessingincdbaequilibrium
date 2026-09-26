@@ -1,23 +1,52 @@
 aid: automatedmediaprocessingincdbaequilibrium
+
 name: Automatedmediaprocessingincdbaequilibrium
-description: 'Automatedmediaprocessingincdbaequilibrium is a company surfaced via the API Evangelist harvest
-  backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Automatedmediaprocessingincdbaequilibrium is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling. The company appears to be involved in automated media processing services, offering solutions that likely include video transcoding, audio processing, and content workflow automation. However, no official website or detailed public information could be located, indicating limited public presence or a possible private operation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/automatedmediaprocessingincdbaequilibrium/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Media
+- Automation
+- Processing
+- Services
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/automatedmediaprocessingincdbaequilibrium
+
+  - type: Hosts
+    url: hosts/automatedmediaprocessingincdbaequilibrium-hosts.yml
+  - type: Vendors
+    url: vendors/automatedmediaprocessingincdbaequilibrium-vendors.yml
+  - type: DomainSecurity
+    url: security/automatedmediaprocessingincdbaequilibrium-domain-security.yml
+  - type: Website
+    url: https://equityzen.com/company/automatedmediaprocessingincdbaequilibrium
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: minimal
+  artifacts_added: 2
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
